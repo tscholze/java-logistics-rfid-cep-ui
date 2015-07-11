@@ -7,6 +7,18 @@
 # Hidden Java files
 *.class
 
+# Hidden Maven files
+target/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
