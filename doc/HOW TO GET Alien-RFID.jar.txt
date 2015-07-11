@@ -1,0 +1,5 @@
+1. Get the SDK from http://www.alientechnology.com/
+2. Locate the software APIs in the SDK and extract them
+3. Move to the Java-API
+4. Rename the Java-API to 'Alien-RFID.jar'
+5. Then run: mvn install:install-file -Dfile=AlienRFID.jar -DgroupId=AlienRFID -DartifactId=AlienRFID -Dversion=0.0.0 -Dpackaging=jar

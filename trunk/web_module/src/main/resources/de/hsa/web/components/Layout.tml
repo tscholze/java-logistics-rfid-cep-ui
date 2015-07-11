@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>${title}</title>
+</head>
+<body>
+<div id="page-content span12">
+
+  <!-- Navigationsleiste -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="./index.html">RFID-Gatekeeper</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="">
+              <a href="#">Scan Tags</a>
+            </li>
+            <li class="active">
+              <a href="#">Notification Rules</a>
+            </li>
+            <li class="">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-top:20px">&nbsp;</div>
+
+  <!-- Inhalt -->
+  <div class="container">
+    <t:body/>
+  </div>
+
+</div>
+</body>
+</html>

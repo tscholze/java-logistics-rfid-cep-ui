@@ -1,0 +1,14 @@
+.tagDangerHighlight {
+    color: red;
+    font-weight: bold;
+}
+
+.taglist li {
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.id-highlight {
+    color: grey;
+    font-size: 0.7em;
+}

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!-- Zentrale Konfigurationsdatei fuer Hibernate -->
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Datenbankzugriffsberechtigung -->
+        <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+        <property name="connection.url">jdbc:hsqldb:hsql://localhost</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+
+        <!-- Wieviele gleichzeitige Verbindungen es maximal geben darf -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Welche Datenbanktyp wir ansprechen wollen -->
+        <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+
+        <!-- Hibernate soll sich selber um das Session Mgmt kuemmern -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Kein 2nd Level Chache -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Zum Debug - zeige alle abgelegten SQL Statements -->
+        <property name="show_sql">false</property>
+
+        <!-- Zum Debug - Bei Neustart, baue dich selber nochmal auf -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping package="de.hsa.database.entities" />
+        <mapping class="de.hsa.database.entities.Product" />
+        <mapping class="de.hsa.database.entities.Rule" />
+        <mapping class="de.hsa.database.entities.Tag" />
+        <mapping class="de.hsa.database.entities.Event" />
+
+    </session-factory>
+</hibernate-configuration>

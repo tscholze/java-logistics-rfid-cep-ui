@@ -1,0 +1,97 @@
+<html t:type="layout" title="RFID-Web-Module Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+
+<header>
+    <h1>Scan Tags</h1>
+
+    <p class="lead">Liste aller erfassten Tags</p>
+</header>
+
+<script>
+    var showAlert = false;
+</script>
+
+<div class="span7">
+    <h3>Information</h3>
+
+    <div class="tagList">
+        <ul>
+            <li><strong>aufgetretene Regel:</strong> "${ruleName}"</li>
+            <li><strong>aufgetreten um:</strong> ${eventTriggerDate}</li>
+        </ul>
+    </div>
+
+    <h3>erfasste Personen</h3>
+
+    <div class="taglist">
+        <ul>
+            <t:loop source="humanList" value="tag">
+                <li>
+                    <t:if test="!isRobot">
+                        <span class="label label-default span1" style="margin-right:5px;">
+                            Mensch
+                        </span>
+                    </t:if>
+                    <t:if test="isRobot">
+                        <span class="label label-info span1" style="margin-right:5px;">
+                            Roboter
+                        </span>
+                    </t:if>
+                    ${productname}
+                    <span class="id-highlight">
+                        <small>(ID #${tag.epc})</small>
+                    </span>
+                </li>
+            </t:loop>
+        </ul>
+    </div>
+
+    <h3>erfasste Produkte</h3>
+
+    <div class="taglist">
+        <ul>
+            <t:loop source="productList" value="tag">
+                <li>
+                    <t:if test="isHanuta">
+                        <span class="label label-important span1" style="margin-right:5px;">
+                            Achtung
+                        </span>
+                        ${productname}
+                        <span class="id-highlight">
+                            <small>(ID #${tag.epc})</small>
+                        </span>
+                        <script>
+                            showAlert = true;
+                        </script>
+                    </t:if>
+
+                    <t:if test="!isHanuta">
+                        <span class="label label-success span1" style="margin-right:5px;">
+                            In Ordnung
+                            </span>
+                        ${productname}
+                        <span class="id-highlight">
+                            <small>(ID #${tag.epc})</small>
+                            </span>
+                    </t:if>
+                </li>
+            </t:loop>
+        </ul>
+    </div>
+          <a class="btn btn-info span2" style="" onclick="window.location.reload();">
+              Aktualisieren
+          </a>
+    <!--  <a class="btn btn-info" style="width:70%;" onclick="window.location.reload();">Aktualisieren</a>  -->
+
+    <div style="padding-top:20px">&nbsp;</div>
+</div>
+
+<script>
+    if (showAlert)
+    {
+        alert("Achtung! Hanuta im Scanbereich!");
+    }
+</script>
+</html>
