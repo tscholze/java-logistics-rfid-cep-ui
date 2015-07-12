@@ -30,6 +30,16 @@ The system is based on a various, most Java-based technolgy stacks.
 * HornetQ (Java Message Service)
 * and many more
 
+## Recommended files to read
+To get a better point of view to see the concrete 'work together' of all components, have a look at the German [technical documentation file](https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/technische_dokumentation.pdf).
+
+## Publication
+This project was part of a German publication called ['Das dynamische Mindesthaltbarkeitsdatum – Auf dem Weg zu einer Echtzeitereignisverarbeitung in der Lebensmittellogistik'](http://www.btw-2013.de/proceedings/Das%20dynamische%20Mindesthaltbarkeitsdatum%20%20Auf%20dem%20Weg%20zu%20einer%20Echtzeitereignisverarbeitung%20in%20der%20Lebensmittellogistik.pdf). 
+
+The German abstract of the paper:
+
+*Das dynamische Mindesthaltbarkeitsdatum stellt neue Herausforderungen an logistische Prozesse und deren IT-Unterstützung. Es wird gezeigt, dass die Ereignisverarbeitung in Echtzeit eine wertvolle Unterstützung in Logistik-IT-Systemen darstellt. Eine Softwarearchitektur zur Überwachung von Logistikprozessen wird vorgestellt und im Anwendungsfall Dynamisches Mindesthaltbarkeitsdatum angewandt.*
+
 ## Keep in mind
 This project is out of development for years now. All dependencies are dated-out or mostly no longer available to download. This repository is a one-time mirror of Felix's Bitbucket project.
 
