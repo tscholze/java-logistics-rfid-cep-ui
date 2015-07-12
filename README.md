@@ -30,6 +30,19 @@ The system is based on a various, most Java-based technolgy stacks.
 * HornetQ (Java Message Service)
 * and many more
 
+<center>
+	<a href="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-1.png"><img src="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-1.png" width="300" title="Usecase" /></a>
+
+<a href="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-2.png"><img src="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-2.png" width="300" title="Technologies"/></a>
+
+<a hef="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-3.png"><img src="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-3.png" width="300" title="Glossary"/></a>
+
+<a hef="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-3.png"><img src="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/mobile-ui-1.png" width="150" title="Native mobile UI"/></a>
+
+<a hef="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/poster-3.png"><img src="https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/screenshots/mobile-ui-2.png" width="150" title="Web-based mobile UI"/></a>
+
+</center>
+
 ## Recommended files to read
 To get a better point of view to see the concrete 'work together' of all components, have a look at the German [technical documentation file](https://github.com/tscholze/java-logistics-rfid-cep-ui/blob/master/doc/technische_dokumentation.pdf).
 
